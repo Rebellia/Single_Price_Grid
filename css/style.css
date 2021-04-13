@@ -1,0 +1,70 @@
+.main-container {
+  width: 309px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 268px 228px 228px;
+      grid-template-rows: 268px 228px 228px;
+      grid-template-areas: "community" "subscription" "why";
+}
+
+@media screen and (min-width: 1024px) {
+  .main-container {
+    height: 472px;
+    -ms-grid-rows: 216px 256px;
+        grid-template-rows: 216px 256px;
+    -ms-grid-columns: 256px 256px;
+        grid-template-columns: 256px 256px;
+        grid-template-areas: "community community" "subscription why";
+  }
+}
+
+#community {
+  background-color: #fff;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: community;
+}
+
+#community h1 {
+  color: #2ab2af;
+}
+
+#community p:nth-child(2) {
+  color: #c0df34;
+}
+
+#community p:nth-child(3) {
+  color: #98a6bd;
+}
+
+#subscription {
+  background-color: #27a5a3;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: subscription;
+}
+
+#subscription h1 {
+  color: #e5eff5;
+}
+
+#subscription button {
+  background-color: #c0df34;
+  color: #e5eff5;
+}
+
+#why {
+  background-color: #2ab2af;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: why;
+  color: #e5eff5;
+}
+
+body {
+  background-color: #e5eff5;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */

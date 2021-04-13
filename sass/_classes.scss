@@ -1,0 +1,58 @@
+.main-container {
+    width: 309px;
+    display: grid;
+    grid-template-rows: 268px 228px 228px;
+    grid-template-areas:
+        "community"
+        "subscription"
+        "why";
+
+
+    @media screen and (min-width: 1024px) {
+        height: 472px;
+        grid-template-rows: 216px 256px;
+        grid-template-columns: 256px 256px;
+        grid-template-areas: 
+         "community community"
+          "subscription why";
+    }
+}
+
+
+#community {
+    background-color: #fff;
+    grid-area: community;
+
+    h1 {
+        color: $cyan;
+    }
+
+    p:nth-child(2) {
+        color: $brightYellow;
+    }
+
+    p:nth-child(3) {
+        color: $grayishBlue;
+    }
+}
+
+
+#subscription {
+    background-color: $darkCyan;
+    grid-area: subscription;
+
+    h1 {
+        color: $lightGray;
+    }
+
+    button {
+        background-color: $brightYellow;
+        color: $lightGray;
+    }
+}
+
+#why {
+    background-color: $cyan;
+    grid-area: why;
+    color: $lightGray;
+}
